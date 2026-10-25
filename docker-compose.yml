@@ -1,0 +1,10 @@
+#
+services:
+  9router:
+    image: decolua/9router:latest
+    container_name: 9router
+    restart: unless-stopped
+    environment:
+      INITIAL_PASSWORD: "MyPassword!"
+    ports:
+      - "20128:20128"
